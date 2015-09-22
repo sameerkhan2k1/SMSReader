@@ -1,2 +1,2 @@
 # SMS Reader
-This app duplicates the SMS database and display it in a ListView.
+This app duplicates the SMS database and displays it in a ListView.
