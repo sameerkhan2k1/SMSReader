@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -25,6 +26,14 @@
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
+
+        <provider
+            android:authorities="com.sameer.smsreader.data"
+            android:name=".data.SMSProvider"
+            android:exported="false">
+
+        </provider>
+
     </application>
 
 </manifest>
