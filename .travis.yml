@@ -11,4 +11,4 @@ android:
     - sys-img-armeabi-v7a-android-23
     - extra-android-m2repository
 
-script: ./gradlew build connectedCheck
+script: ./gradlew build check
